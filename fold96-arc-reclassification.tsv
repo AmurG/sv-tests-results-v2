@@ -1,0 +1,115 @@
+# Arcilator x-honesty reclassification (shipped 2026-07-13): 96 rows previously green for
+# the wrong reason (x-bits dropped in comparisons; '=== x'-style self-checks passed vacuously
+# on the 2-valued engine). The 2026-07-13 case-equality fold change (fold case equality against x/z-bearing constants
+# to its static verdict) surfaces them as honest reds. Identical row set on the v1 and v2
+# boards; measured 2026-07-09 (lane F4) and reconfirmed at the 2026-07-14 boards.
+# ADJUDICATED against the second reference implementation (2026-07-13). Reference-relative classes:
+#   82 GENUINE-4STATE-GAP               the reference passes the row; we do not (roadmap: F4 4-state ladder)
+#   10 CEILING-CORRECTION               the test's own selfcheck FAILS on the reference too
+#                                       (removed from our reachable-ceiling denominator)
+#    4 REFERENCE-INCONCLUSIVE-PARSE-GAP the reference frontend cannot parse the row
+#                                       ('<->' equivalence operator, 'var' qualifier forms);
+#                                       held pending a further independent reference
+# 'The second reference implementation' is an independent SystemVerilog implementation: not one of the 20
+# tool columns published on this dashboard, and not this fork. It is distinct from the AnonSim reference
+# cited elsewhere on the dashboard; no row below was adjudicated by both. See the README.
+# Classes are single-reference-relative evidence, not a multi-reference LRM proof.
+# (Prose corrected 2026-07-15: an earlier revision of this header described adjudication as
+# pending and all 96 rows as the genuine 4-state gap; 14 of 96 were misdescribed.)
+TestName
+regress-sv_always_comb_no_sens_iv
+regress-sv_always_ff_iv
+regress-sv_br974a_iv
+regress-sv_br974b_iv
+regress-sv_br974c_iv
+regress-sv_br_gh1230_iv
+regress-sv_br_gh164b_iv
+regress-sv_br_gh337_iv
+regress-sv_enum_test1_iv
+regress-sv_implicit_cast1_iv
+regress-sv_implicit_cast7_iv
+regress-sv_implicit_cast8_iv
+regress-sv_implicit_cast9_iv
+regress-sv_l_equiv_const_iv
+regress-sv_pr3390385_iv
+regress-sv_pr3390385b_iv
+regress-sv_pr3390385c_iv
+regress-sv_pr3390385d_iv
+regress-sv_sf_isunknown_iv
+regress-sv_sv_darray_oob_vec4_iv
+regress-sv_sv_for_variable_iv
+regress-sv_sv_foreach1_iv
+regress-sv_sv_port_default3_iv
+regress-sv_sv_port_default4_iv
+regress-sv_sv_port_default5_iv
+regress-sv_sv_port_default6_iv
+regress-sv_sv_port_default7_iv
+regress-sv_sv_port_default8_iv
+regress-sv_sv_port_default9_iv
+regress-sv_sv_queue_oob_vec4_iv
+regress-sv_sv_var_block_iv
+regress-sv_sv_var_module_input1_iv
+regress-sv_sv_var_module_input2_iv
+regress-sv_sv_var_module_iv
+regress-sv_sv_var_module_output1_iv
+regress-sv_sv_var_module_output2_iv
+regress-sv_sv_var_package_iv
+regress-sv_wild_cmp_const_iv
+regress-vlg_always311C_iv
+regress-vlg_always311D_iv
+regress-vlg_always311G_iv
+regress-vlg_always311H_iv
+regress-vlg_always311I_iv
+regress-vlg_always311J_iv
+regress-vlg_always314C_iv
+regress-vlg_br1001_iv
+regress-vlg_br_gh15_iv
+regress-vlg_br_gh18_iv
+regress-vlg_br_gh515_iv
+regress-vlg_br_gh674_iv
+regress-vlg_br_gh99a_iv
+regress-vlg_br_gh99g_iv
+regress-vlg_br_gh99l_iv
+regress-vlg_br_gh99p_iv
+regress-vlg_br_gh99q_iv
+regress-vlg_br_gh99r_iv
+regress-vlg_br_gh99s_iv
+regress-vlg_comp1001_fail3_iv
+regress-vlg_comp1001_fail4_iv
+regress-vlg_con_tri_iv
+regress-vlg_constadd2_iv
+regress-vlg_constfunc15_iv
+regress-vlg_cprop_iv
+regress-vlg_extend_iv
+regress-vlg_meminit2_iv
+regress-vlg_meminit_iv
+regress-vlg_modulus_iv
+regress-vlg_pr1474318_iv
+regress-vlg_pr1570451b_iv
+regress-vlg_pr1695322_iv
+regress-vlg_pr1755629_iv
+regress-vlg_pr1776485_iv
+regress-vlg_pr1960633_iv
+regress-vlg_pr1990269_iv
+regress-vlg_pr2121536_iv
+regress-vlg_pr2121536b_iv
+regress-vlg_pr2190323_iv
+regress-vlg_pr2233192b_iv
+regress-vlg_pr2233192c_iv
+regress-vlg_pr2358848_iv
+regress-vlg_pr2434688_iv
+regress-vlg_pr2434688b_iv
+regress-vlg_pr2835632a_iv
+regress-vlg_pr2837451_iv
+regress-vlg_pr2973532_iv
+regress-vlg_pr2974216_iv
+regress-vlg_pr2974216b_iv
+regress-vlg_pr2974294_iv
+regress-vlg_pr3197917_iv
+regress-vlg_pr848_iv
+regress-vlg_sdw_stmt002_iv
+regress-vlg_signed_equality_iv
+regress-vlg_tern9_iv
+regress-vlg_time4_iv
+regress-vlg_uwire_iv
+regress-vlg_wait2_iv
